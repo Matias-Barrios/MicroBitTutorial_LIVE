@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mq4braua-7d9hlbui0">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Ejemplo I: Movimiento de led con Micropython | MicroBit con Python</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mq4braua-7d9hlbui0" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Introducción a MicroBit con MicroPython</a>
+<ul class="other-section">
+<li> <a href="../html/historia.html" class="no-ch">Historia</a>
+</li>
+<li> <a href="../html/que-vamos-a-aprender-en-el-curso.html" class="no-ch">¿Que vamos a aprender en el curso?</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/que-necesitamos-saber-y-que-herramientas-precisamo.html" class="no-ch">¿Que necesitamos saber y que herramientas precisamos?</a>
+</li>
+<li> <a href="../html/usando-la-plataforma-makecode.html" class="no-ch">Usando la plataforma MakeCode</a>
+</li>
+<li class="active"> <a href="../html/ejemplo-i-movimiento-de-led-con-micropython.html" class="active no-ch">Ejemplo I: Movimiento de led con Micropython</a>
+</li>
+</ul>
+</nav><main id="page-mq4braua-7d9hlbui0" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MicroBit con Python</p>
+<p class="package-subtitle">Una introducción básica</p></div>
+<div class="page-header"><h1 class="page-title">Ejemplo I: Movimiento de led con Micropython</h1></div>
+</header><div id="page-content-page-mq4braua-7d9hlbui0" class="page-content">
+<article id="block-1780866259121-gmoh927f9" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Text</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1780866259120-2adsuvye2" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1780866259120-2adsuvye2&quot;}">
+<div class="exe-text-template">
+    <p><strong>Nuestro primer ejemplo: Moviendo un punto en la pantalla</strong></p>
+<p>¡Llegó el momento de ver la magia del código en acción! Para inaugurar nuestras prácticas textuales, vamos a analizar un programa clásico pero sumamente potente. Con este script vas a lograr algo fundamental en la computación física: interactuar con el hardware en tiempo real.</p>
+<p>El objetivo de este primer ejemplo es controlar un único punto brillante de la matriz de luces LED de la micro:bit y desplazarlo horizontalmente de izquierda a derecha utilizando los botones físicos A y B.</p>
+<p>Aquí tienes el código completo que introduciremos en el editor:</p>
+<p><code>x = 2</code></p>
+<p><code>y = 2</code></p>
+<p><code>led.plot(x, y)</code></p>
+<p><br /><code>def moverAlaIzquierda():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x -= 1 </code><br /><code>    led.plot(x, y)</code></p>
+<p><code>def moverAlaDerecha():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x += 1</code><br /><code>    led.plot(x, y)</code></p>
+<p><code>input.on_button_pressed(Button.A, moverAlaIzquierda)</code><br /><code>input.on_button_pressed(Button.B, moverAlaDerecha)</code></p>
+<p><strong>¿Por qué funciona este código?</strong></p>
+<p>Para entender el funcionamiento de este programa, debemos desglosarlo en cuatro conceptos clave que estructuran la lógica de la micro:bit:</p>
+<p>El sistema de coordenadas y el estado inicial</p>
+<p>La pantalla de la micro:bit es una matriz de 5 por 5 luces LED. En informática, las grillas se miden mediante coordenadas (X, Y), empezando a contar desde el número 0. Por lo tanto, tanto el eje horizontal (X) como el vertical (Y) van del 0 al 4.</p>
+<p>Al declarar <em>x = 2</em><strong> </strong>e<em> y = 2</em>, estamos apuntando exactamente al centro geométrico de la pantalla. La instrucción inicial <em>led.plot(x, y)</em> le ordena a la placa encender (dibujar) el LED ubicado en esa posición. Al iniciar el simulador, verás un único punto brillante en el medio.</p>
+<p><strong>La ilusión de movimiento (Apagar, Modificar, Encender)</strong></p>
+<p>Si observas las funciones <em>moverAlaIzquierda()</em> y <em>moverAlaDerecha()</em>, ambas siguen una secuencia de tres pasos lógicos indispensables para simular que el punto se mueve:</p>
+<p><br /><strong>Apagar (led.unplot):</strong> Antes de cambiar de posición, debemos apagar el LED actual. Si no hiciéramos esto, el punto dejaría un rastro continuo de luces encendidas a su paso en lugar de simular un desplazamiento.</p>
+<p><strong>Modificar la coordenada:</strong> Restamos uno (x -= 1) para ir a la izquierda o sumamos uno (x += 1) para ir a la derecha en el eje horizontal.</p>
+<p><strong>Encender (led.plot): </strong>Dibujamos el LED en la nueva coordenada de X que acabamos de calcular.<br />La importancia de la palabra clave global</p>
+<p>Dentro de las funciones notarás la línea <em>global x</em>. En Python, las variables creadas fuera de las funciones son globales. Si una función intenta modificar su valor directamente, el lenguaje asume por seguridad que estás intentando crear una variable nueva y local, lo que rompería nuestra lógica. Al escribir <em>global x,</em> le estamos avisando explícitamente a la función que queremos alterar la variable X original que se encuentra afuera.</p>
+<p><strong>Programación orientada a eventos</strong></p>
+<p>Las dos últimas líneas son las encargadas de conectar el software con el mundo físico: <em>input.on_button_pressed()</em>. Esto le indica a la micro:bit que permanezca escuchando atentamente sus botones. Cuando detecta el evento de que el Botón A ha sido presionado, interrumpe lo que está haciendo y ejecuta de inmediato la función <em>moverAlaIzquierda</em>. Si presionas el Botón B, se dispara <em>moverAlaDerecha</em>.</p>
+<p><strong>Video Tutorial:</strong></p>
+<p><em>¡Felicidades! Has creado tu primer sistema de control interactivo mediante código real.</em></p>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/usando-la-plataforma-makecode.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<span class="nav-button nav-button-right" aria-hidden="true"><span>Siguiente</span></span>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

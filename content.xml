@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ode SYSTEM "content.dtd">
+<ode xmlns="http://www.intef.es/xsd/ode" version="2.0">
+<userPreferences>
+  <userPreference>
+    <key>theme</key>
+    <value>base</value>
+  </userPreference>
+</userPreferences>
+<odeResources>
+  <odeResource>
+    <key>odeId</key>
+    <value>202606071901326BB6GN</value>
+  </odeResource>
+  <odeResource>
+    <key>odeVersionId</key>
+    <value>202606071901328VID3I</value>
+  </odeResource>
+  <odeResource>
+    <key>exe_version</key>
+    <value>4.0.0</value>
+  </odeResource>
+</odeResources>
+<odeProperties>
+  <odeProperty>
+    <key>pp_title</key>
+    <value>MicroBit con Python</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_subtitle</key>
+    <value>Una introducción básica</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_author</key>
+    <value>Matias-Barrios</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_description</key>
+    <value>Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_lang</key>
+    <value>es</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_license</key>
+    <value>creative commons: attribution - share alike 4.0</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_licenseUrl</key>
+    <value>https://creativecommons.org/licenses/by-sa/4.0/</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_theme</key>
+    <value>base</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_exelearning_version</key>
+    <value>v4.0.0</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_modified</key>
+    <value>1780869565115</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addExeLink</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addPagination</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addSearchBox</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addAccessibilityToolbar</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addMathJax</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>exportSource</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_globalFont</key>
+    <value>default</value>
+  </odeProperty>
+</odeProperties>
+<odeNavStructures>
+<odeNavStructure>
+  <odePageId>page-mq4brau6-3gfz6whoo</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Introducción a MicroBit con MicroPython</pageName>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Introducción a MicroBit con MicroPython</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Introducción a MicroBit con MicroPython</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value>Introducción a MicroBit con MicroPython</value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4brau6-3gfz6whoo</odePageId>
+      <odeBlockId>block-1780863398648-7n9ky5lem</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4brau6-3gfz6whoo</odePageId>
+          <odeBlockId>block-1780863398648-7n9ky5lem</odeBlockId>
+          <odeIdeviceId>idevice-1780863398647-z8fp6d88u</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>¡Te damos la bienvenida al curso de Micro:bit con MicroPython!</strong><br /><strong> </strong></p>
+<p>El universo de la tecnología y la programación está lleno de posibilidades, y la mejor manera de entenderlo es creando tus propios proyectos. Este curso está diseñado para guiarte paso a paso desde los conceptos elementales hasta el desarrollo de tus primeras aplicaciones de hardware, utilizando herramientas potentes y accesibles del sector educativo.</p>
+<p>Comenzaremos explorando a fondo qué es la BBC micro:bit. Se trata de una pequeña tarjeta programable, del tamaño de una tarjeta de crédito, diseñada para enseñar programación de una manera física y visual. A pesar de su tamaño compacto, este dispositivo cuenta con una gran variedad de componentes internos: una matriz de luces LED para mostrar mensajes, botones interactivos, sensores de luz, temperatura y movimiento, e incluso conectividad inalámbrica. Es, en esencia, una computadora de bolsillo que te permite interactuar de forma directa con el entorno real.</p>
+<p><img src="{{context_path}}/content/resources/microit_placa_ejemplo_1.jpeg" title="ejemplo1" width="1024" height="559" alt="Ejemplo de placa microbit" /></p>
+<p>Para dar tus primeros pasos con comodidad, no será necesario que cuentes con la tarjeta física desde el primer día. Aquí es donde entra en juego el emulador de MakeCode. Aunque este entorno es famoso por su sistema de bloques, nosotros aprovecharemos su potente simulador en línea como un laboratorio virtual. Este emulador te permitirá visualizar en tiempo real cómo se comporta tu código directamente en una pantalla digital, facilitando el testeo y la corrección de errores antes de dar el salto a la placa física.</p>
+<p><img src="{{context_path}}/content/resources/mceclip0.png" /></p>
+<p>El verdadero corazón de nuestro aprendizaje será MicroPython. ¿De qué se trata exactamente? Es una versión optimizada del lenguaje Python 3, adaptada específicamente para funcionar en microcontroladores con recursos limitados. Python es uno de los lenguajes más utilizados, limpios y demandados del planeta, y MicroPython te ofrece toda esa robustez en un formato ideal para el hardware. Durante las lecciones, aprenderás cómo utilizarlo: desde la sintaxis básica y lógica de control, hasta la lectura de los sensores integrados y la creación de animaciones personalizadas en la tarjeta.</p>
+<p> <img src="{{context_path}}/content/resources/Gemini_Generated_Image_rx4cf1rx4cf1rx4c.png" title="placas" width="1536" height="838" alt="Jugando y aprendiendo" /></p>
+<p>Este prefacio es solo la puerta de entrada a un viaje dinámico donde la teoría se transforma de inmediato en práctica. No importa si nunca antes has escrito una línea de código o si ya posees nociones de informática; este espacio está pensado para que experimentes sin miedo, superes desafíos lógicos y descubras el increíble universo de la computación física y los sistemas embebidos.</p>
+<p><em>¡Te damos la bienvenida al curso y prepárate para programar el futuro!</em></p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780863398647-z8fp6d88u","textInfoDurationInput":"","textInfoDurationTextInput":"Duration","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Grouping","textTextarea":"<p><strong>¡Te damos la bienvenida al curso de Micro:bit con MicroPython!</strong><br /><strong> </strong></p>\n<p>El universo de la tecnología y la programación está lleno de posibilidades, y la mejor manera de entenderlo es creando tus propios proyectos. Este curso está diseñado para guiarte paso a paso desde los conceptos elementales hasta el desarrollo de tus primeras aplicaciones de hardware, utilizando herramientas potentes y accesibles del sector educativo.</p>\n<p>Comenzaremos explorando a fondo qué es la BBC micro:bit. Se trata de una pequeña tarjeta programable, del tamaño de una tarjeta de crédito, diseñada para enseñar programación de una manera física y visual. A pesar de su tamaño compacto, este dispositivo cuenta con una gran variedad de componentes internos: una matriz de luces LED para mostrar mensajes, botones interactivos, sensores de luz, temperatura y movimiento, e incluso conectividad inalámbrica. Es, en esencia, una computadora de bolsillo que te permite interactuar de forma directa con el entorno real.</p>\n<p><img src=\"{{context_path}}/content/resources/microit_placa_ejemplo_1.jpeg\" title=\"ejemplo1\" width=\"1024\" height=\"559\" alt=\"Ejemplo de placa microbit\" /></p>\n<p>Para dar tus primeros pasos con comodidad, no será necesario que cuentes con la tarjeta física desde el primer día. Aquí es donde entra en juego el emulador de MakeCode. Aunque este entorno es famoso por su sistema de bloques, nosotros aprovecharemos su potente simulador en línea como un laboratorio virtual. Este emulador te permitirá visualizar en tiempo real cómo se comporta tu código directamente en una pantalla digital, facilitando el testeo y la corrección de errores antes de dar el salto a la placa física.</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip0.png\" /></p>\n<p>El verdadero corazón de nuestro aprendizaje será MicroPython. ¿De qué se trata exactamente? Es una versión optimizada del lenguaje Python 3, adaptada específicamente para funcionar en microcontroladores con recursos limitados. Python es uno de los lenguajes más utilizados, limpios y demandados del planeta, y MicroPython te ofrece toda esa robustez en un formato ideal para el hardware. Durante las lecciones, aprenderás cómo utilizarlo: desde la sintaxis básica y lógica de control, hasta la lectura de los sensores integrados y la creación de animaciones personalizadas en la tarjeta.</p>\n<p> <img src=\"{{context_path}}/content/resources/Gemini_Generated_Image_rx4cf1rx4cf1rx4c.png\" title=\"placas\" width=\"1536\" height=\"838\" alt=\"Jugando y aprendiendo\" /></p>\n<p>Este prefacio es solo la puerta de entrada a un viaje dinámico donde la teoría se transforma de inmediato en práctica. No importa si nunca antes has escrito una línea de código o si ya posees nociones de informática; este espacio está pensado para que experimentes sin miedo, superes desafíos lógicos y descubras el increíble universo de la computación física y los sistemas embebidos.</p>\n<p><em>¡Te damos la bienvenida al curso y prepárate para programar el futuro!</em></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mq4brau8-v51iwqh9b</odePageId>
+  <odeParentPageId>page-mq4brau6-3gfz6whoo</odeParentPageId>
+  <pageName>Historia</pageName>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Historia</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Historia</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4brau8-v51iwqh9b</odePageId>
+      <odeBlockId>block-1780864420142-n13h6mrw5</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4brau8-v51iwqh9b</odePageId>
+          <odeBlockId>block-1780864420142-n13h6mrw5</odeBlockId>
+          <odeIdeviceId>idevice-1780864420140-rg1d9i968</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>La historia de la BBC micro:bit: De la televisión a las aulas del mundo</strong></p>
+<p>La historia de la placa micro:bit está profundamente ligada a una de las tradiciones más importantes de la radiodifusión y la educación tecnológica: el compromiso de la cadena británica BBC con la alfabetización digital. Para entender sus orígenes, debemos viajar en el tiempo hasta la década de 1980, cuando la BBC lanzó el "Computer Literacy Project" junto con la computadora BBC Micro. Aquella iniciativa introdujo a toda una generación de estudiantes en el mundo de la informática. Tres décadas después, el panorama había cambiado de forma radical. Aunque los jóvenes consumían tecnología constantemente a través de smartphones y tabletas, la brecha entre "usar" tecnología y "comprender cómo funciona" se estaba expandiendo de forma alarmante.</p>
+<p>Para abordar este desafío, en 2015 la BBC anunció el desarrollo de un nuevo dispositivo como parte de una renovada campaña educativa. El objetivo era ambicioso: regalar una pequeña tarjeta programable a cada estudiante de séptimo año (alrededor de 11 y 12 años) en el Reino Unido. Sin embargo, la BBC no podía lograrlo sola. Se formó una coalición sin precedentes que incluyó a gigantes tecnológicos, instituciones académicas y empresas de manufactura, tales como ARM, Microsoft, Lancaster University, Nordic Semiconductor y element14. Cada socio aportó su experiencia para diseñar un hardware de bajo costo pero altamente versátil.</p>
+<p>Tras algunos retrasos lógicos en la distribución y el diseño, el despliegue masivo se concretó en 2016. Se distribuyeron un millón de placas de forma gratuita en las escuelas británicas. El impacto fue inmediato y sumamente positivo, transformando las clases de informática en laboratorios interactivos de computación física. Al ver el éxito del proyecto, y para garantizar la continuidad y expansión global de la iniciativa, los socios fundaron a finales de ese mismo año la Micro:bit Educational Foundation, una organización sin fines de lucro destinada a llevar este recurso a todos los rincones del planeta.</p>
+<p><img src="{{context_path}}/content/resources/comparativa.png" title="comparativa" width="1536" height="838" alt="Ejemplo de las placas legadas vs la versión de 2020 en adelante" /></p>
+<p>Desde entonces, la micro:bit ha evolucionado de manera constante. El hito más significativo en su hardware ocurrió a finales de 2020 con el lanzamiento de la versión 2 (v2). Esta actualización mantuvo el tamaño y la compatibilidad con el ecosistema anterior, pero incorporó mejoras tecnológicas clave demandadas por los docentes: un procesador mucho más potente, un micrófono integrado, un altavoz y un logotipo táctil capacitivo. Hoy en día, la micro:bit se utiliza en decenas de países y ha inspirado programas educativos globales que preparan a millones de estudiantes para los desafíos del futuro.</p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780864420140-rg1d9i968","textInfoDurationInput":"","textInfoDurationTextInput":"Duration","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Grouping","textTextarea":"<p><strong>La historia de la BBC micro:bit: De la televisión a las aulas del mundo</strong></p>\n<p>La historia de la placa micro:bit está profundamente ligada a una de las tradiciones más importantes de la radiodifusión y la educación tecnológica: el compromiso de la cadena británica BBC con la alfabetización digital. Para entender sus orígenes, debemos viajar en el tiempo hasta la década de 1980, cuando la BBC lanzó el \"Computer Literacy Project\" junto con la computadora BBC Micro. Aquella iniciativa introdujo a toda una generación de estudiantes en el mundo de la informática. Tres décadas después, el panorama había cambiado de forma radical. Aunque los jóvenes consumían tecnología constantemente a través de smartphones y tabletas, la brecha entre \"usar\" tecnología y \"comprender cómo funciona\" se estaba expandiendo de forma alarmante.</p>\n<p>Para abordar este desafío, en 2015 la BBC anunció el desarrollo de un nuevo dispositivo como parte de una renovada campaña educativa. El objetivo era ambicioso: regalar una pequeña tarjeta programable a cada estudiante de séptimo año (alrededor de 11 y 12 años) en el Reino Unido. Sin embargo, la BBC no podía lograrlo sola. Se formó una coalición sin precedentes que incluyó a gigantes tecnológicos, instituciones académicas y empresas de manufactura, tales como ARM, Microsoft, Lancaster University, Nordic Semiconductor y element14. Cada socio aportó su experiencia para diseñar un hardware de bajo costo pero altamente versátil.</p>\n<p>Tras algunos retrasos lógicos en la distribución y el diseño, el despliegue masivo se concretó en 2016. Se distribuyeron un millón de placas de forma gratuita en las escuelas británicas. El impacto fue inmediato y sumamente positivo, transformando las clases de informática en laboratorios interactivos de computación física. Al ver el éxito del proyecto, y para garantizar la continuidad y expansión global de la iniciativa, los socios fundaron a finales de ese mismo año la Micro:bit Educational Foundation, una organización sin fines de lucro destinada a llevar este recurso a todos los rincones del planeta.</p>\n<p><img src=\"{{context_path}}/content/resources/comparativa.png\" title=\"comparativa\" width=\"1536\" height=\"838\" alt=\"Ejemplo de las placas legadas vs la versión de 2020 en adelante\" /></p>\n<p>Desde entonces, la micro:bit ha evolucionado de manera constante. El hito más significativo en su hardware ocurrió a finales de 2020 con el lanzamiento de la versión 2 (v2). Esta actualización mantuvo el tamaño y la compatibilidad con el ecosistema anterior, pero incorporó mejoras tecnológicas clave demandadas por los docentes: un procesador mucho más potente, un micrófono integrado, un altavoz y un logotipo táctil capacitivo. Hoy en día, la micro:bit se utiliza en decenas de países y ha inspirado programas educativos globales que preparan a millones de estudiantes para los desafíos del futuro.</p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mq4brau9-hlpcnrh01</odePageId>
+  <odeParentPageId>page-mq4brau6-3gfz6whoo</odeParentPageId>
+  <pageName>¿Que vamos a aprender en el curso?</pageName>
+  <odeNavStructureOrder>1</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>¿Que vamos a aprender en el curso?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>¿Que vamos a aprender en el curso?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4brau9-hlpcnrh01</odePageId>
+      <odeBlockId>block-1780864767230-u1buhcj6d</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4brau9-hlpcnrh01</odePageId>
+          <odeBlockId>block-1780864767230-u1buhcj6d</odeBlockId>
+          <odeIdeviceId>idevice-1780864767229-sdqtaulj4</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>¿Qué vamos a aprender en el curso?</strong></p>
+<p>Iniciar el camino en la programación y la robótica educativa es una aventura emocionante, y en este curso nos enfocaremos en brindarte las herramientas esenciales para que pases de la teoría a la acción de forma rápida y entretenida. A lo largo de las lecciones, descubriremos cómo dar vida a tus ideas utilizando tecnología que está revolucionando las aulas de todo el mundo.</p>
+<p>Uno de los pilares fundamentales de nuestro aprendizaje será el uso de MakeCode de Microsoft. Esta plataforma en línea se convertirá en nuestro laboratorio virtual principal, ya que la utilizaremos para emular una tarjeta micro:bit real. La gran ventaja de este entorno es que nos permite experimentar, probar códigos y ver los resultados de forma inmediata en la pantalla. No importa si aún no tienes el dispositivo físico en tus manos; el simulador replica con exactitud cada luz LED, botón y sensor de la placa, ofreciéndote un espacio seguro para equivocarte y aprender sin límites.</p>
+<p><img src="{{context_path}}/content/resources/microsoft_makecode.jpg" title="Makecode" width="160" height="160" alt="Microsoft makecode" /></p>
+<p>Para dominar esta herramienta, dedicaremos una parte importante a explorar las nociones básicas de cómo utilizar dicho sitio web y emulador. Aprenderás a navegar por su interfaz, a reconocer dónde se ubican las diferentes categorías de comandos y a comprender la lógica de su funcionamiento. Veremos cómo arrastrar elementos, cómo interactuar con los botones virtuales de la placa simulada y la manera correcta de gestionar tus proyectos para que no pierdas ningún avance. Es un recorrido intuitivo diseñado para que te sientas totalmente cómodo desde el primer clic.</p>
+<p>Además de la simulación por bloques, daremos un salto de calidad al descubrir que en estas placas se puede utilizar MicroPython. Explicado de forma sencilla, MicroPython es una versión compacta y optimizada del lenguaje de programación Python 3, diseñada específicamente para ejecutarse en microcontroladores y sistemas con recursos limitados. Python es uno de los lenguajes más limpios, potentes y utilizados a nivel profesional en todo el mundo; con MicroPython, aprenderás cómo adaptar esa misma sintaxis para controlar el hardware, leer sensores y escribir líneas de código reales que interactúen con el entorno físico.</p>
+<p><img src="{{context_path}}/content/resources/micropython.png" title="Micropython" width="1280" height="1304" alt="Micropyhon" /></p>
+<p>Finalmente, para que el proceso sea dinámico y motivador, vamos a ver algunos videos tutoriales divertidos. Estos recursos visuales están pensados para romper con la monotonía, mostrarte ejemplos de proyectos creativos ya terminados y guiarte de manera amena en la resolución de desafíos lógicos. Al combinar la potencia del emulador, la robustez del código y el apoyo de tutoriales entretenidos, terminarás el curso con la capacidad y la confianza necesarias para crear tus propias soluciones tecnológicas.</p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780864767229-sdqtaulj4","textInfoDurationInput":"","textInfoDurationTextInput":"Duration","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Grouping","textTextarea":"<p><strong>¿Qué vamos a aprender en el curso?</strong></p>\n<p>Iniciar el camino en la programación y la robótica educativa es una aventura emocionante, y en este curso nos enfocaremos en brindarte las herramientas esenciales para que pases de la teoría a la acción de forma rápida y entretenida. A lo largo de las lecciones, descubriremos cómo dar vida a tus ideas utilizando tecnología que está revolucionando las aulas de todo el mundo.</p>\n<p>Uno de los pilares fundamentales de nuestro aprendizaje será el uso de MakeCode de Microsoft. Esta plataforma en línea se convertirá en nuestro laboratorio virtual principal, ya que la utilizaremos para emular una tarjeta micro:bit real. La gran ventaja de este entorno es que nos permite experimentar, probar códigos y ver los resultados de forma inmediata en la pantalla. No importa si aún no tienes el dispositivo físico en tus manos; el simulador replica con exactitud cada luz LED, botón y sensor de la placa, ofreciéndote un espacio seguro para equivocarte y aprender sin límites.</p>\n<p><img src=\"{{context_path}}/content/resources/microsoft_makecode.jpg\" title=\"Makecode\" width=\"160\" height=\"160\" alt=\"Microsoft makecode\" /></p>\n<p>Para dominar esta herramienta, dedicaremos una parte importante a explorar las nociones básicas de cómo utilizar dicho sitio web y emulador. Aprenderás a navegar por su interfaz, a reconocer dónde se ubican las diferentes categorías de comandos y a comprender la lógica de su funcionamiento. Veremos cómo arrastrar elementos, cómo interactuar con los botones virtuales de la placa simulada y la manera correcta de gestionar tus proyectos para que no pierdas ningún avance. Es un recorrido intuitivo diseñado para que te sientas totalmente cómodo desde el primer clic.</p>\n<p>Además de la simulación por bloques, daremos un salto de calidad al descubrir que en estas placas se puede utilizar MicroPython. Explicado de forma sencilla, MicroPython es una versión compacta y optimizada del lenguaje de programación Python 3, diseñada específicamente para ejecutarse en microcontroladores y sistemas con recursos limitados. Python es uno de los lenguajes más limpios, potentes y utilizados a nivel profesional en todo el mundo; con MicroPython, aprenderás cómo adaptar esa misma sintaxis para controlar el hardware, leer sensores y escribir líneas de código reales que interactúen con el entorno físico.</p>\n<p><img src=\"{{context_path}}/content/resources/micropython.png\" title=\"Micropython\" width=\"1280\" height=\"1304\" alt=\"Micropyhon\" /></p>\n<p>Finalmente, para que el proceso sea dinámico y motivador, vamos a ver algunos videos tutoriales divertidos. Estos recursos visuales están pensados para romper con la monotonía, mostrarte ejemplos de proyectos creativos ya terminados y guiarte de manera amena en la resolución de desafíos lógicos. Al combinar la potencia del emulador, la robustez del código y el apoyo de tutoriales entretenidos, terminarás el curso con la capacidad y la confianza necesarias para crear tus propias soluciones tecnológicas.</p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mq4brau9-k3s6l46yj</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>¿Que necesitamos saber y que herramientas precisamos?</pageName>
+  <odeNavStructureOrder>1</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>¿Que necesitamos saber y que herramientas precisamos?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>¿Que necesitamos saber y que herramientas precisamos?</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4brau9-k3s6l46yj</odePageId>
+      <odeBlockId>block-1780865163554-sjj5b3xs6</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4brau9-k3s6l46yj</odePageId>
+          <odeBlockId>block-1780865163554-sjj5b3xs6</odeBlockId>
+          <odeIdeviceId>idevice-1780865163552-vhjm7qw4i</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>¿Qué necesitamos saber y qué herramientas precisamos?</strong></p>
+<p>Una de las principales ventajas de este trayecto formativo es que no necesitas tener ningún conocimiento previo sobre las placas micro:bit ni sobre robótica educativa. El diseño del hardware, sus componentes internos, la matriz de luces, los sensores y la forma de interactuar con el entorno físico son aspectos que aprenderemos desde cero, paso a paso, a lo largo de las lecciones. Este curso está pensado para guiarte en el descubrimiento de la computación física, por lo que no debes preocuparte si nunca has tenido contacto con un microcontrolador.</p>
+<p>Sin embargo, dado que el lenguaje de programación elegido para dar vida a nuestros proyectos es MicroPython, tener nociones básicas de Python y de programación en general resulta sumamente útil. Comprender conceptos elementales como qué es una variable, cómo funciona un bucle (while o for), el uso de condicionales (if, else) y la importancia de la indentación en el código te otorgará una ventaja significativa. Si ya entiendes la lógica detrás de estas estructuras, te resultará mucho más natural y fluido concentrarte en cómo aplicarlas para controlar los componentes de la placa, leer los datos de los sensores o diseñar proyectos interactivos.</p>
+<p><img src="{{context_path}}/content/resources/mceclip1.png" /></p>
+<p>En cuanto a las herramientas necesarias, el requisito principal es contar con un dispositivo con acceso a internet para utilizar el entorno y emulador en línea. No es obligatorio disponer de la tarjeta física desde el primer día, ya que la plataforma virtual replicará perfectamente su funcionamiento.</p>
+<p><img src="{{context_path}}/content/resources/mceclip2.png" /></p>
+<p>En resumen, la curiosidad y las ganas de experimentar son el motor principal para este curso. Si a eso le sumas una base mínima de pensamiento computacional o un acercamiento previo a la sintaxis de Python, tendrás todo lo necesario para aprovechar al máximo cada práctica y llevar tus habilidades de desarrollo al siguiente nivel.</p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780865163552-vhjm7qw4i","textInfoDurationInput":"","textInfoDurationTextInput":"Duration","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Grouping","textTextarea":"<p><strong>¿Qué necesitamos saber y qué herramientas precisamos?</strong></p>\n<p>Una de las principales ventajas de este trayecto formativo es que no necesitas tener ningún conocimiento previo sobre las placas micro:bit ni sobre robótica educativa. El diseño del hardware, sus componentes internos, la matriz de luces, los sensores y la forma de interactuar con el entorno físico son aspectos que aprenderemos desde cero, paso a paso, a lo largo de las lecciones. Este curso está pensado para guiarte en el descubrimiento de la computación física, por lo que no debes preocuparte si nunca has tenido contacto con un microcontrolador.</p>\n<p>Sin embargo, dado que el lenguaje de programación elegido para dar vida a nuestros proyectos es MicroPython, tener nociones básicas de Python y de programación en general resulta sumamente útil. Comprender conceptos elementales como qué es una variable, cómo funciona un bucle (while o for), el uso de condicionales (if, else) y la importancia de la indentación en el código te otorgará una ventaja significativa. Si ya entiendes la lógica detrás de estas estructuras, te resultará mucho más natural y fluido concentrarte en cómo aplicarlas para controlar los componentes de la placa, leer los datos de los sensores o diseñar proyectos interactivos.</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip1.png\" /></p>\n<p>En cuanto a las herramientas necesarias, el requisito principal es contar con un dispositivo con acceso a internet para utilizar el entorno y emulador en línea. No es obligatorio disponer de la tarjeta física desde el primer día, ya que la plataforma virtual replicará perfectamente su funcionamiento.</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip2.png\" /></p>\n<p>En resumen, la curiosidad y las ganas de experimentar son el motor principal para este curso. Si a eso le sumas una base mínima de pensamiento computacional o un acercamiento previo a la sintaxis de Python, tendrás todo lo necesario para aprovechar al máximo cada práctica y llevar tus habilidades de desarrollo al siguiente nivel.</p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mq4braua-02acqaz2y</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Usando la plataforma MakeCode</pageName>
+  <odeNavStructureOrder>2</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Usando la plataforma MakeCode</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Usando la plataforma MakeCode</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4braua-02acqaz2y</odePageId>
+      <odeBlockId>block-1780865743950-yqxk3bz3u</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4braua-02acqaz2y</odePageId>
+          <odeBlockId>block-1780865743950-yqxk3bz3u</odeBlockId>
+          <odeIdeviceId>idevice-1780865743949-q9ydw90l7</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>Usando la plataforma MakeCode</strong></p>
+<p>Para dar nuestros primeros pasos en la computación física y la programación de sistemas embebidos, no necesitamos instalar herramientas complejas ni configurar pesados entornos de desarrollo en nuestra computadora. Todo lo que requerimos está al alcance de un clic gracias a una de las herramientas educativas más potentes y accesibles del sector tecnológico actual.</p>
+<p><strong>¿Qué es Microsoft MakeCode?</strong></p>
+<p>Microsoft MakeCode es una plataforma de aprendizaje en línea, gratuita y de código abierto, desarrollada por Microsoft para acercar la programación y la robótica a estudiantes de todas las edades. Su magia radica en su enfoque dual y en su versatilidad: permite programar utilizando un sistema visual de bloques (ideal para aprender la lógica inicial sin frustrarse por la sintaxis) y, al mismo tiempo, ofrece editores de texto basados en lenguajes profesionales.</p>
+<p>Además, incorpora un simulador interactivo en tiempo real. Esto significa que a la izquierda de tu pantalla tendrás una reproducción digital exacta de la micro:bit que reaccionará inmediatamente a las líneas de código que escribas, permitiéndote testear tus programas de manera segura y dinámica antes de transferirlos a una tarjeta real.</p>
+<p><strong>El punto de encuentro: ¿Cómo accedemos?</strong></p>
+<p>El entorno de MakeCode está completamente alojado en la nube, por lo que funciona directamente desde cualquier navegador web moderno (como Chrome, Edge o Firefox). Para ingresar al entorno específico diseñado para nuestra tarjeta, solo debes escribir o hacer clic en el siguiente enlace oficial:</p>
+<p>Enlace de acceso: <a href="https://makecode.microbit.org/">https://makecode.microbit.org/</a></p>
+<p>Al cargar la página, te encontrarás con la pantalla de inicio o "Dashboard", donde podrás visualizar tus proyectos recientes, acceder a plantillas preconfiguradas y explorar una gran cantidad de tutoriales guiados.</p>
+<p><strong>Cuentas y guardado: ¿Cómo loguearnos?</strong></p>
+<p>Una de las dudas más comunes al empezar es si es obligatorio registrarse para usar la plataforma. La respuesta corta es no. MakeCode es sumamente noble y guarda de forma automática todos tus progresos en el almacenamiento local (caché) de tu navegador web. Si cierras la pestaña y regresas al día siguiente desde la misma computadora, tus proyectos seguirán allí.</p>
+<p>Sin embargo, confiar ciegamente en la memoria del navegador es arriesgado (si borras el historial o las cookies, podrías perder tu trabajo). Por ello, es altamente recomendable loguearse. Para hacerlo de forma segura, sigue estos pasos:</p>
+<p>Ubica la esquina superior derecha de la pantalla de inicio y haz clic en el botón de Iniciar sesión (Sign In) o en el ícono del engranaje/usuario.<br />La plataforma te ofrecerá la opción de conectarte utilizando una cuenta de Microsoft (como Outlook o Hotmail) o una cuenta de Google (Gmail).<br />Selecciona tu proveedor de preferencia, introduce tus credenciales habituales y otorga los permisos necesarios.<br />Al estar logueado, MakeCode sincronizará automáticamente todos tus proyectos en la nube. Esto te garantiza que tu código estará respaldado de forma segura y, además, te permitirá acceder a tus archivos y continuar programando desde cualquier otra computadora, ya sea en el liceo, en tu casa o en la biblioteca.</p>
+<p><img src="{{context_path}}/content/resources/mceclip3.png" /></p>
+<p><strong>Uso básico de la interfaz y primer proyecto</strong></p>
+<p>Para comenzar a crear, haz clic en el botón grande que dice "Nuevo proyecto". Te saltará una pequeña ventana emergente pidiéndote que le asignes un nombre (por ejemplo, "MiPrimerCodigo"). Al presionar "Crear", ingresarás al editor principal, el cual se divide de forma muy intuitiva en tres grandes áreas:</p>
+<p><img src="{{context_path}}/content/resources/mceclip4.png" /></p>
+<p><strong>El Simulador (Izquierda):</strong> Una réplica digital de la micro:bit. Cuenta con botones virtuales de reproducción, pausa y reinicio. Si programas la matriz para que muestre una carita feliz, la verás brillar aquí de inmediato.</p>
+<p><strong><img src="{{context_path}}/content/resources/mceclip5.png" /></strong></p>
+<p><strong>La Caja de Herramientas o Categorías (Centro): </strong>Un menú organizado por colores y temáticas (Básico, Entrada, Música, Bucles, Lógica, Variables, etc.) que contiene todas las funciones y bloques que puedes utilizar.</p>
+<p><img src="{{context_path}}/content/resources/mceclip6.png" /></p>
+<p><strong>El Área de Trabajo (Derecha): </strong>El lienzo gigante donde arrastrarás los bloques o escribirás tus líneas de código. De manera predeterminada, encontrarás dos estructuras iniciales: al iniciar (código que se ejecuta una sola vez al encender la placa) y para siempre (un bucle infinito que repite las instrucciones continuamente).<br /></p>
+<p><strong><img src="{{context_path}}/content/resources/mceclip7.png" /></strong></p>
+<p><strong>El salto fundamental a MicroPython</strong></p>
+<p>Aunque la plataforma inicia mostrando bloques de colores, este curso está enfocado en el desarrollo textual. Hacer la transición en MakeCode es sumamente sencillo. En la parte superior central de la pantalla verás un selector flotante que dice "Bloques / JavaScript / Python".</p>
+<p><img src="{{context_path}}/content/resources/mceclip8.png" /></p>
+<p>Al hacer clic sobre la opción "Python", todo tu espacio de trabajo se transformará de inmediato en un editor de texto profesional con numeración de líneas y autocompletado de código. La plataforma adaptará la sintaxis automáticamente para que trabajes directamente con MicroPython, permitiéndote escribir código real, gestionar sangrías (indentación) y experimentar el verdadero flujo de trabajo de un desarrollador de software mientras sigues disfrutando de los beneficios del simulador interactivo a la izquierda.</p>
+<p></p>
+<p><br /></p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780865743949-q9ydw90l7","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p><strong>Usando la plataforma MakeCode</strong></p>\n<p>Para dar nuestros primeros pasos en la computación física y la programación de sistemas embebidos, no necesitamos instalar herramientas complejas ni configurar pesados entornos de desarrollo en nuestra computadora. Todo lo que requerimos está al alcance de un clic gracias a una de las herramientas educativas más potentes y accesibles del sector tecnológico actual.</p>\n<p><strong>¿Qué es Microsoft MakeCode?</strong></p>\n<p>Microsoft MakeCode es una plataforma de aprendizaje en línea, gratuita y de código abierto, desarrollada por Microsoft para acercar la programación y la robótica a estudiantes de todas las edades. Su magia radica en su enfoque dual y en su versatilidad: permite programar utilizando un sistema visual de bloques (ideal para aprender la lógica inicial sin frustrarse por la sintaxis) y, al mismo tiempo, ofrece editores de texto basados en lenguajes profesionales.</p>\n<p>Además, incorpora un simulador interactivo en tiempo real. Esto significa que a la izquierda de tu pantalla tendrás una reproducción digital exacta de la micro:bit que reaccionará inmediatamente a las líneas de código que escribas, permitiéndote testear tus programas de manera segura y dinámica antes de transferirlos a una tarjeta real.</p>\n<p><strong>El punto de encuentro: ¿Cómo accedemos?</strong></p>\n<p>El entorno de MakeCode está completamente alojado en la nube, por lo que funciona directamente desde cualquier navegador web moderno (como Chrome, Edge o Firefox). Para ingresar al entorno específico diseñado para nuestra tarjeta, solo debes escribir o hacer clic en el siguiente enlace oficial:</p>\n<p>Enlace de acceso: <a href=\"https://makecode.microbit.org/\">https://makecode.microbit.org/</a></p>\n<p>Al cargar la página, te encontrarás con la pantalla de inicio o \"Dashboard\", donde podrás visualizar tus proyectos recientes, acceder a plantillas preconfiguradas y explorar una gran cantidad de tutoriales guiados.</p>\n<p><strong>Cuentas y guardado: ¿Cómo loguearnos?</strong></p>\n<p>Una de las dudas más comunes al empezar es si es obligatorio registrarse para usar la plataforma. La respuesta corta es no. MakeCode es sumamente noble y guarda de forma automática todos tus progresos en el almacenamiento local (caché) de tu navegador web. Si cierras la pestaña y regresas al día siguiente desde la misma computadora, tus proyectos seguirán allí.</p>\n<p>Sin embargo, confiar ciegamente en la memoria del navegador es arriesgado (si borras el historial o las cookies, podrías perder tu trabajo). Por ello, es altamente recomendable loguearse. Para hacerlo de forma segura, sigue estos pasos:</p>\n<p>Ubica la esquina superior derecha de la pantalla de inicio y haz clic en el botón de Iniciar sesión (Sign In) o en el ícono del engranaje/usuario.<br />La plataforma te ofrecerá la opción de conectarte utilizando una cuenta de Microsoft (como Outlook o Hotmail) o una cuenta de Google (Gmail).<br />Selecciona tu proveedor de preferencia, introduce tus credenciales habituales y otorga los permisos necesarios.<br />Al estar logueado, MakeCode sincronizará automáticamente todos tus proyectos en la nube. Esto te garantiza que tu código estará respaldado de forma segura y, además, te permitirá acceder a tus archivos y continuar programando desde cualquier otra computadora, ya sea en el liceo, en tu casa o en la biblioteca.</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip3.png\" /></p>\n<p><strong>Uso básico de la interfaz y primer proyecto</strong></p>\n<p>Para comenzar a crear, haz clic en el botón grande que dice \"Nuevo proyecto\". Te saltará una pequeña ventana emergente pidiéndote que le asignes un nombre (por ejemplo, \"MiPrimerCodigo\"). Al presionar \"Crear\", ingresarás al editor principal, el cual se divide de forma muy intuitiva en tres grandes áreas:</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip4.png\" /></p>\n<p><strong>El Simulador (Izquierda):</strong> Una réplica digital de la micro:bit. Cuenta con botones virtuales de reproducción, pausa y reinicio. Si programas la matriz para que muestre una carita feliz, la verás brillar aquí de inmediato.</p>\n<p><strong><img src=\"{{context_path}}/content/resources/mceclip5.png\" /></strong></p>\n<p><strong>La Caja de Herramientas o Categorías (Centro): </strong>Un menú organizado por colores y temáticas (Básico, Entrada, Música, Bucles, Lógica, Variables, etc.) que contiene todas las funciones y bloques que puedes utilizar.</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip6.png\" /></p>\n<p><strong>El Área de Trabajo (Derecha): </strong>El lienzo gigante donde arrastrarás los bloques o escribirás tus líneas de código. De manera predeterminada, encontrarás dos estructuras iniciales: al iniciar (código que se ejecuta una sola vez al encender la placa) y para siempre (un bucle infinito que repite las instrucciones continuamente).<br /></p>\n<p><strong><img src=\"{{context_path}}/content/resources/mceclip7.png\" /></strong></p>\n<p><strong>El salto fundamental a MicroPython</strong></p>\n<p>Aunque la plataforma inicia mostrando bloques de colores, este curso está enfocado en el desarrollo textual. Hacer la transición en MakeCode es sumamente sencillo. En la parte superior central de la pantalla verás un selector flotante que dice \"Bloques / JavaScript / Python\".</p>\n<p><img src=\"{{context_path}}/content/resources/mceclip8.png\" /></p>\n<p>Al hacer clic sobre la opción \"Python\", todo tu espacio de trabajo se transformará de inmediato en un editor de texto profesional con numeración de líneas y autocompletado de código. La plataforma adaptará la sintaxis automáticamente para que trabajes directamente con MicroPython, permitiéndote escribir código real, gestionar sangrías (indentación) y experimentar el verdadero flujo de trabajo de un desarrollador de software mientras sigues disfrutando de los beneficios del simulador interactivo a la izquierda.</p>\n<p></p>\n<p><br /></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mq4braua-7d9hlbui0</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Ejemplo I: Movimiento de led con Micropython</pageName>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Ejemplo I: Movimiento de led con Micropython</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Ejemplo I: Movimiento de led con Micropython</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mq4braua-7d9hlbui0</odePageId>
+      <odeBlockId>block-1780866259121-gmoh927f9</odeBlockId>
+      <blockName>Text</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mq4braua-7d9hlbui0</odePageId>
+          <odeBlockId>block-1780866259121-gmoh927f9</odeBlockId>
+          <odeIdeviceId>idevice-1780866259120-2adsuvye2</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p><strong>Nuestro primer ejemplo: Moviendo un punto en la pantalla</strong></p>
+<p>¡Llegó el momento de ver la magia del código en acción! Para inaugurar nuestras prácticas textuales, vamos a analizar un programa clásico pero sumamente potente. Con este script vas a lograr algo fundamental en la computación física: interactuar con el hardware en tiempo real.</p>
+<p>El objetivo de este primer ejemplo es controlar un único punto brillante de la matriz de luces LED de la micro:bit y desplazarlo horizontalmente de izquierda a derecha utilizando los botones físicos A y B.</p>
+<p>Aquí tienes el código completo que introduciremos en el editor:</p>
+<p><code>x = 2</code></p>
+<p><code>y = 2</code></p>
+<p><code>led.plot(x, y)</code></p>
+<p><br /><code>def moverAlaIzquierda():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x -= 1 </code><br /><code>    led.plot(x, y)</code></p>
+<p><code>def moverAlaDerecha():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x += 1</code><br /><code>    led.plot(x, y)</code></p>
+<p><code>input.on_button_pressed(Button.A, moverAlaIzquierda)</code><br /><code>input.on_button_pressed(Button.B, moverAlaDerecha)</code></p>
+<p><strong>¿Por qué funciona este código?</strong></p>
+<p>Para entender el funcionamiento de este programa, debemos desglosarlo en cuatro conceptos clave que estructuran la lógica de la micro:bit:</p>
+<p>El sistema de coordenadas y el estado inicial</p>
+<p>La pantalla de la micro:bit es una matriz de 5 por 5 luces LED. En informática, las grillas se miden mediante coordenadas (X, Y), empezando a contar desde el número 0. Por lo tanto, tanto el eje horizontal (X) como el vertical (Y) van del 0 al 4.</p>
+<p>Al declarar <em>x = 2</em><strong> </strong>e<em> y = 2</em>, estamos apuntando exactamente al centro geométrico de la pantalla. La instrucción inicial <em>led.plot(x, y)</em> le ordena a la placa encender (dibujar) el LED ubicado en esa posición. Al iniciar el simulador, verás un único punto brillante en el medio.</p>
+<p><strong>La ilusión de movimiento (Apagar, Modificar, Encender)</strong></p>
+<p>Si observas las funciones <em>moverAlaIzquierda()</em> y <em>moverAlaDerecha()</em>, ambas siguen una secuencia de tres pasos lógicos indispensables para simular que el punto se mueve:</p>
+<p><br /><strong>Apagar (led.unplot):</strong> Antes de cambiar de posición, debemos apagar el LED actual. Si no hiciéramos esto, el punto dejaría un rastro continuo de luces encendidas a su paso en lugar de simular un desplazamiento.</p>
+<p><strong>Modificar la coordenada:</strong> Restamos uno (x -= 1) para ir a la izquierda o sumamos uno (x += 1) para ir a la derecha en el eje horizontal.</p>
+<p><strong>Encender (led.plot): </strong>Dibujamos el LED en la nueva coordenada de X que acabamos de calcular.<br />La importancia de la palabra clave global</p>
+<p>Dentro de las funciones notarás la línea <em>global x</em>. En Python, las variables creadas fuera de las funciones son globales. Si una función intenta modificar su valor directamente, el lenguaje asume por seguridad que estás intentando crear una variable nueva y local, lo que rompería nuestra lógica. Al escribir <em>global x,</em> le estamos avisando explícitamente a la función que queremos alterar la variable X original que se encuentra afuera.</p>
+<p><strong>Programación orientada a eventos</strong></p>
+<p>Las dos últimas líneas son las encargadas de conectar el software con el mundo físico: <em>input.on_button_pressed()</em>. Esto le indica a la micro:bit que permanezca escuchando atentamente sus botones. Cuando detecta el evento de que el Botón A ha sido presionado, interrumpe lo que está haciendo y ejecuta de inmediato la función <em>moverAlaIzquierda</em>. Si presionas el Botón B, se dispara <em>moverAlaDerecha</em>.</p>
+<p><strong>Video Tutorial:</strong></p>
+<p><em>¡Felicidades! Has creado tu primer sistema de control interactivo mediante código real.</em></p>
+<p><br /></p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1780866259120-2adsuvye2","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p><strong>Nuestro primer ejemplo: Moviendo un punto en la pantalla</strong></p>\n<p>¡Llegó el momento de ver la magia del código en acción! Para inaugurar nuestras prácticas textuales, vamos a analizar un programa clásico pero sumamente potente. Con este script vas a lograr algo fundamental en la computación física: interactuar con el hardware en tiempo real.</p>\n<p>El objetivo de este primer ejemplo es controlar un único punto brillante de la matriz de luces LED de la micro:bit y desplazarlo horizontalmente de izquierda a derecha utilizando los botones físicos A y B.</p>\n<p>Aquí tienes el código completo que introduciremos en el editor:</p>\n<p><code>x = 2</code></p>\n<p><code>y = 2</code></p>\n<p><code>led.plot(x, y)</code></p>\n<p><br /><code>def moverAlaIzquierda():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x -= 1 </code><br /><code>    led.plot(x, y)</code></p>\n<p><code>def moverAlaDerecha():</code><br /><code>    global x</code><br /><code>    led.unplot(x, y)</code><br /><code>    x += 1</code><br /><code>    led.plot(x, y)</code></p>\n<p><code>input.on_button_pressed(Button.A, moverAlaIzquierda)</code><br /><code>input.on_button_pressed(Button.B, moverAlaDerecha)</code></p>\n<p><strong>¿Por qué funciona este código?</strong></p>\n<p>Para entender el funcionamiento de este programa, debemos desglosarlo en cuatro conceptos clave que estructuran la lógica de la micro:bit:</p>\n<p>El sistema de coordenadas y el estado inicial</p>\n<p>La pantalla de la micro:bit es una matriz de 5 por 5 luces LED. En informática, las grillas se miden mediante coordenadas (X, Y), empezando a contar desde el número 0. Por lo tanto, tanto el eje horizontal (X) como el vertical (Y) van del 0 al 4.</p>\n<p>Al declarar <em>x = 2</em><strong> </strong>e<em> y = 2</em>, estamos apuntando exactamente al centro geométrico de la pantalla. La instrucción inicial <em>led.plot(x, y)</em> le ordena a la placa encender (dibujar) el LED ubicado en esa posición. Al iniciar el simulador, verás un único punto brillante en el medio.</p>\n<p><strong>La ilusión de movimiento (Apagar, Modificar, Encender)</strong></p>\n<p>Si observas las funciones <em>moverAlaIzquierda()</em> y <em>moverAlaDerecha()</em>, ambas siguen una secuencia de tres pasos lógicos indispensables para simular que el punto se mueve:</p>\n<p><br /><strong>Apagar (led.unplot):</strong> Antes de cambiar de posición, debemos apagar el LED actual. Si no hiciéramos esto, el punto dejaría un rastro continuo de luces encendidas a su paso en lugar de simular un desplazamiento.</p>\n<p><strong>Modificar la coordenada:</strong> Restamos uno (x -= 1) para ir a la izquierda o sumamos uno (x += 1) para ir a la derecha en el eje horizontal.</p>\n<p><strong>Encender (led.plot): </strong>Dibujamos el LED en la nueva coordenada de X que acabamos de calcular.<br />La importancia de la palabra clave global</p>\n<p>Dentro de las funciones notarás la línea <em>global x</em>. En Python, las variables creadas fuera de las funciones son globales. Si una función intenta modificar su valor directamente, el lenguaje asume por seguridad que estás intentando crear una variable nueva y local, lo que rompería nuestra lógica. Al escribir <em>global x,</em> le estamos avisando explícitamente a la función que queremos alterar la variable X original que se encuentra afuera.</p>\n<p><strong>Programación orientada a eventos</strong></p>\n<p>Las dos últimas líneas son las encargadas de conectar el software con el mundo físico: <em>input.on_button_pressed()</em>. Esto le indica a la micro:bit que permanezca escuchando atentamente sus botones. Cuando detecta el evento de que el Botón A ha sido presionado, interrumpe lo que está haciendo y ejecuta de inmediato la función <em>moverAlaIzquierda</em>. Si presionas el Botón B, se dispara <em>moverAlaDerecha</em>.</p>\n<p><strong>Video Tutorial:</strong></p>\n<p><em>¡Felicidades! Has creado tu primer sistema de control interactivo mediante código real.</em></p>\n<p><br /></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+</odeNavStructures>
+</ode>
