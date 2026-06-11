@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mq9vy24n-iabjxrf9w">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Mi primer programa, &quot;Hola mundo!&quot; | MicroBit con Python</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mq9vy24n-iabjxrf9w" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Introducción a MicroBit con MicroPython</a>
+<ul class="other-section">
+<li> <a href="../html/historia.html" class="no-ch">Historia</a>
+</li>
+<li> <a href="../html/que-vamos-a-aprender-en-el-curso.html" class="no-ch">¿Que vamos a aprender en el curso?</a>
+</li>
+<li> <a href="../html/que-necesitamos-saber-y-que-herramientas-precisamo.html" class="no-ch">¿Que necesitamos saber y que herramientas precisamos?</a>
+</li>
+<li> <a href="../html/conociendo-la-placa-microbit.html" class="daddy">Conociendo la placa Microbit</a>
+<ul class="other-section">
+<li> <a href="../html/juego-i-sopa-de-letras-con-nuestra-placa.html" class="no-ch">Juego I: Sopa de Letras con nuestra Placa!</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/usando-la-plataforma-makecode.html" class="no-ch">Usando la plataforma MakeCode</a>
+</li>
+<li class="active"> <a href="../html/mi-primer-programa-hola-mundo.html" class="active daddy">Mi primer programa, &quot;Hola mundo!&quot;</a>
+<ul class="other-section">
+<li> <a href="../html/quiz-mi-primer-programa.html" class="no-ch">Quiz &quot;Mi primer programa&quot;</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/ejemplo-i-movimiento-de-led-con-micropython.html" class="no-ch">Ejemplo I: Movimiento de led con Micropython</a>
+</li>
+<li> <a href="../html/ejemplo-ii-eventos-de-radio.html" class="no-ch">Ejemplo II: Eventos de Radio</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mq9vy24n-iabjxrf9w" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MicroBit con Python</p>
+<p class="package-subtitle">Una introducción básica</p></div>
+<div class="page-header"><h1 class="page-title">Mi primer programa, &quot;Hola mundo!&quot;</h1></div>
+</header><div id="page-content-page-mq9vy24n-iabjxrf9w" class="page-content">
+<article id="block-1781182969806-x6jyo2c5u" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Mi primer programa, &quot;Hola mundo!&quot;</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1781182969804-wcu49wgkk" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1781182969804-wcu49wgkk&quot;}">
+<div class="exe-text-template">
+    <p><strong>🚀 Tu primer "Hola Mundo" en MakeCode (Con Bloques)</strong></p>
+<p>¡Buenas! Hoy vas a programar tu primer código. En el mundo de la informática, es una tradición milenaria empezar con un <em>"Hola Mundo" </em>(básicamente, hacer que una pantalla te salude). Es súper fácil y lo vas a hacer usando bloques, como si fuera un rompecabezas.</p>
+<p><strong>Pasos a seguir</strong></p>
+<p><em>1. Entrar a la plataforma</em></p>
+<p>Lo primero es abrir la web de Microsoft MakeCode en tu navegador <a href="https://makecode.microbit.org/">https://makecode.microbit.org/</a>. Una vez ahí, dale clic al botón que dice "Nuevo proyecto" y ponele el nombre que quieras.</p>
+<p><img src="../content/resources/mceclip0_2.png" width="145" height="126" /></p>
+<p><em>2. Buscar el bloque de texto</em></p>
+<p>En el panel del medio tenés varias categorías de colores. Hacé clic en la categoría Básico (o la que corresponda a tu placa) y buscá el bloque que dice "mostrar cadena" (o show string si lo tenés en inglés). Ese bloque es el que nos permite mostrar letras en la pantalla.</p>
+<p><img src="../content/resources/mceclip1_1.png" width="250" height="243" /></p>
+<p><em>3. Arrastrar y encajar</em></p>
+<p>Arrastrá ese bloque hacia tu zona de trabajo (la parte derecha de la pantalla). Tenés que encajarlo adentro del bloque verde que dice "al iniciar". Vas a escuchar un "clic" visual cuando se unan.</p>
+<p><img src="../content/resources/mceclip2_1.png" /></p>
+<p><br /><em>4. Cambiar el mensaje</em></p>
+<p>Por defecto, el bloque suele decir "Hello". Hacé clic arriba de esa palabra, borrala y escribí tu propio saludo: <span style="color: #2dc26b;">¡Hola Mundo!.</span></p>
+<p><img src="../content/resources/mceclip3_1.png" /><br /><br /><em>5. ¡A probarlo!</em></p>
+<p>¡Y ya está! Mirá el simulador que tenés a la izquierda de la pantalla. Vas a ver cómo las letras de tu mensaje empiezan a pasar de corrido. ¡Acabas de programar tu primer código!</p>
+<p><img src="../content/resources/mceclip4.gif" /></p>
+<p>💡 Tip: Si querés pasarlo a la placa real, solo tenés que conectar tu plaquita por USB a la compu, darle al botón Descargar abajo a la izquierda y arrastrar el archivo que se baja adentro de la unidad de la placa. ¡Listo!</p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/usando-la-plataforma-makecode.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/quiz-mi-primer-programa.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

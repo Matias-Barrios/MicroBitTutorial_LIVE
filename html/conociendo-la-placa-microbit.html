@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mq9vy24k-4iaqnegyg">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Conociendo la placa Microbit | MicroBit con Python</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mq9vy24k-4iaqnegyg" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Introducción a MicroBit con MicroPython</a>
+<ul class="other-section">
+<li> <a href="../html/historia.html" class="no-ch">Historia</a>
+</li>
+<li> <a href="../html/que-vamos-a-aprender-en-el-curso.html" class="no-ch">¿Que vamos a aprender en el curso?</a>
+</li>
+<li> <a href="../html/que-necesitamos-saber-y-que-herramientas-precisamo.html" class="no-ch">¿Que necesitamos saber y que herramientas precisamos?</a>
+</li>
+<li class="active"> <a href="../html/conociendo-la-placa-microbit.html" class="active daddy">Conociendo la placa Microbit</a>
+<ul class="other-section">
+<li> <a href="../html/juego-i-sopa-de-letras-con-nuestra-placa.html" class="no-ch">Juego I: Sopa de Letras con nuestra Placa!</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/usando-la-plataforma-makecode.html" class="no-ch">Usando la plataforma MakeCode</a>
+</li>
+<li> <a href="../html/mi-primer-programa-hola-mundo.html" class="daddy">Mi primer programa, &quot;Hola mundo!&quot;</a>
+<ul class="other-section">
+<li> <a href="../html/quiz-mi-primer-programa.html" class="no-ch">Quiz &quot;Mi primer programa&quot;</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/ejemplo-i-movimiento-de-led-con-micropython.html" class="no-ch">Ejemplo I: Movimiento de led con Micropython</a>
+</li>
+<li> <a href="../html/ejemplo-ii-eventos-de-radio.html" class="no-ch">Ejemplo II: Eventos de Radio</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mq9vy24k-4iaqnegyg" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MicroBit con Python</p>
+<p class="package-subtitle">Una introducción básica</p></div>
+<div class="page-header"><h1 class="page-title">Conociendo la placa Microbit</h1></div>
+</header><div id="page-content-page-mq9vy24k-4iaqnegyg" class="page-content">
+<article id="block-1781144481476-udwwfr34v" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Conociendo la placa MicroBit</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1781144481475-89jmhbj9p" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1781144481475-89jmhbj9p&quot;}">
+<div class="exe-text-template">
+    <p>La tarjeta micro:bit concentra múltiples herramientas de hardware en un espacio muy reducido. Puedes identificar fácilmente cada uno de sus componentes clave usando el siguiente mapa visual:</p>
+<p><img src="../content/resources/mceclip0_1.png" /></p>
+<ul>
+<li><strong>Matriz LED 5x5:</strong> Ubicada al frente, funciona como una pantalla para mostrar letras, números o dibujos programados, y también actúa como sensor de luz ambiental.<br /><br /></li>
+<li><strong>Botones A y B:</strong> Dos pulsadores físicos situados a los lados de la pantalla que sirven para registrar la interacción del usuario y disparar eventos específicos en el código.<br /><br /></li>
+<li><strong>Pines de conexión (Edge Connector): </strong>La banda dorada inferior cuenta con agujeros grandes (0, 1, 2, 3V, GND) para conectar cables de cocodrilo o conectores tipo banana, expandiendo la placa hacia sensores y actuadores externos.<br /><br /></li>
+<li><strong>Procesador y Antena (Bluetooth/Radio): </strong>Ubicado en el reverso (Nordic nRF52833), es el cerebro que ejecuta las instrucciones y permite la comunicación inalámbrica entre tarjetas o con smartphones.<br /><br /></li>
+<li><strong>Sensores internos:</strong> Incluye un acelerómetro para detectar movimientos, inclinaciones o caídas, y una brújula digital (Compass) para reconocer la orientación magnética.<br /></li>
+<li><strong>Puertos de alimentación y Reset:</strong> Cuenta con un conector Micro USB para programarla desde la computadora, un conector de batería JST para hacerla autónoma, y un botón de reinicio en la parte trasera.</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/que-necesitamos-saber-y-que-herramientas-precisamo.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/juego-i-sopa-de-letras-con-nuestra-placa.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>
