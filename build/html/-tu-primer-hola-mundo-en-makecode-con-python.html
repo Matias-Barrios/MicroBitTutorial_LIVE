@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-1781399469653-llhvjmuw2">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>🐍 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Python) | MicroBit con Python</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.
+
+
+
+#microbit, #bbc-microbit, #placa-microbit, #hardware-educativo, #sensores, #pantalla-led, #matriz-led, #botones-microbit, #pines-dorados, #robotica-educativa, #dispositivos-fisicos, #makecode, #microsoft-makecode, #makecode-python, #editor-makecode, #simulador-microbit, #plataforma-web, #makecode-arcade, #programacion-bloques, #pensamiento-computacional, #algoritmos, #descomposicion, #patrones-logicos, #logica-programacion, #bloques-encajables, #introduccion-coding, #python, #micropython, #codigo-escrito, #lineas-codigo, #sintaxis-python, #basic-show-string, #basic-show-icon, #indentacion, #sangria-codigo, #sensible-mayusculas, #hola-mundo, #variables, #funciones, #def-python, #parametros, #eventos, #input-microbit, #sensores-eventos, #curso-informatica, #tutorial-principiantes, #historia-computacion, #grace-hopper-bug, #debugging-errores, #quiz-final">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-1781399469653-llhvjmuw2" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Introducción a MicroBit con MicroPython</a>
+<ul class="other-section">
+<li> <a href="../html/-historia.html" class="no-ch">📜 Historia</a>
+</li>
+<li> <a href="../html/-que-vamos-a-aprender-en-el-curso.html" class="no-ch">🧠 ¿Que vamos a aprender en el curso?</a>
+</li>
+<li> <a href="../html/-que-necesitamos-saber-y-que-herramientas-precisam.html" class="no-ch">📚 ¿Que necesitamos saber y que herramientas precisamos?</a>
+</li>
+<li> <a href="../html/-conociendo-la-placa-microbit.html" class="daddy">🤖 Conociendo la placa Microbit</a>
+<ul class="other-section">
+<li> <a href="../html/-juego-i-sopa-de-letras-con-nuestra-placa.html" class="no-ch">🎮 Juego I: Sopa de Letras con nuestra Placa!</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-usando-la-plataforma-makecode.html" class="no-ch">🌐 Usando la plataforma MakeCode</a>
+</li>
+<li> <a href="../html/-tu-primer-hola-mundo-en-makecode-con-bloques.html" class="daddy">🚀 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Bloques)</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-mi-primer-programa.html" class="no-ch">📋 Quiz &quot;Mi primer programa&quot;</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/-tu-primer-hola-mundo-en-makecode-con-python.html" class="active daddy">🐍 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Python)</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-mi-primer-programa-con-python-.html" class="no-ch">📋 Quiz &quot;Mi primer programa&quot; ( con Python )</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-que-son-las-variables-y-como-usarlas-en-python.html" class="daddy">📦 ¿Qué son las variables y cómo usarlas en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-sobre-varibales.html" class="no-ch">📋 Quiz sobre varibales</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-que-son-las-funciones-y-como-usarlas-en-python.html" class="daddy">🛠️ ¿Qué son las funciones y cómo usarlas en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-sobre-funciones.html" class="no-ch">📋 Quiz sobre funciones</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-que-son-los-eventos-y-como-usarlos-en-python.html" class="daddy">⚡ ¿Qué son los eventos y cómo usarlos en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-video-1-movimiento-de-led-con-micropython.html" class="no-ch">🎬 VIDEO 1: Movimiento de led con Micropython</a>
+</li>
+<li> <a href="../html/-video-2-eventos-de-radio.html" class="no-ch">🎬 VIDEO 2: Eventos de Radio</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-el-desafio-final-quiz-de-30-preguntas.html" class="no-ch">🏆 El desafio final!! Quiz de 30 preguntas</a>
+</li>
+</ul>
+</nav><main id="page-1781399469653-llhvjmuw2" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MicroBit con Python</p>
+<p class="package-subtitle">Una introducción básica a la programación en las placas micro:bit con Micro Python</p></div>
+<div class="page-header"><h1 class="page-title">🐍 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Python)</h1></div>
+</header><div id="page-content-page-1781399469653-llhvjmuw2" class="page-content">
+<article id="block-1781399469653-4mvvlluib" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">🐍 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Python)</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1781399469653-c0qndyfi0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1781399469653-c0qndyfi0&quot;}">
+<div class="exe-text-template">
+    <p>🐍 <strong>Tu primer "Hola Mundo" en MakeCode (Con Python)</strong><br /></p>
+<p>¡Buenas! Si ya dominás los bloques, llegó el momento de dar el salto a la programación real escrita. Vamos a hacer la misma tradición milenaria del "Hola Mundo", pero esta vez escribiendo líneas de código en Python, uno de los lenguajes más usados del mundo. ¡Vas a ver que no muerde!</p>
+<p><strong>Pasos a seguir</strong></p>
+<p><em>1. Cambiar a modo Python</em></p>
+<p>Abrí tu proyecto en la web de MakeCode. Si estás viendo los bloques de siempre, mirá arriba en el centro de la pantalla: vas a ver un botón que dice "Bloques" y al lado uno que dice "Python". Hacé clic en Python para pasar al editor de texto.</p>
+<p><img src="../content/resources/mceclip0_3.png" width="518" height="267" /></p>
+<p><em>2. Entender la estructura básica</em></p>
+<p>Vas a ver que los bloques desaparecieron y ahora tenés un lienzo en blanco para escribir (o quizás te aparezca algo de código por defecto). En Python no tenemos un bloque verde "al iniciar", sino que las instrucciones que escribamos se van a ejecutar de arriba hacia abajo, una tras otra.</p>
+<p><em>3. Escribir el comando mágico</em></p>
+<p>Hacé clic en el renglón número 1 del editor y escribí el comando para mostrar texto en la micro:bit. Tenés que tipear <em>basic.show_string() </em>(ojo que lleva un punto en el medio y todo en minúsculas).</p>
+<p><em>4. Poner tu saludo</em><br /></p>
+<p>Adentro de los paréntesis de <em>basic.show_string()</em>, tenés que poner tu mensaje entre comillas (para que Python entienda que son letras y no parte del código). Te tiene que quedar exactamente así: <em>basic.show_string("¡Hola Mundo!")</em></p>
+<p><img src="../content/resources/mceclip1_2.png" width="532" height="193" /></p>
+<p><img src="../content/resources/mceclip2_2.png" width="532" height="193" /></p>
+<p><br />5. ¡A probar el simulador!<br />¡Listo! Mirá el simulador de la izquierda. Igual que antes, vas a ver pasar tu mensaje en la pantalla de la placa. Acabás de escribir tus primeras líneas de código real. ¡Un viaje de ida!</p>
+<p><img src="../content/resources/mceclip4.gif" title="ejemplo" width="384" height="288" alt="ejemplo del simulador &quot;hola mundo&quot;" /></p>
+<p>💡 Tip: Si te da pereza escribir todo de memoria, ¡el panel del medio con categorías de colores sigue estando! Podés hacer clic en Basic y arrastrar el comando de texto directamente al editor, o usar el autocompletado que te sugiere las palabras mientras escribís.</p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/-quiz-mi-primer-programa.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/-quiz-mi-primer-programa-con-python-.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

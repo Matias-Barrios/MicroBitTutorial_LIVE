@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mqd2fsz7-rmsn1qvbh">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>🎬 VIDEO 2: Eventos de Radio | MicroBit con Python</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Este es un minicurso de MicroBit usando Micropython. Su objetivo es dar nociones básicas de utilizar el lenguaje para generar aplicaciones prácticas usando las placas y el emulador de MakeCode.
+
+
+
+#microbit, #bbc-microbit, #placa-microbit, #hardware-educativo, #sensores, #pantalla-led, #matriz-led, #botones-microbit, #pines-dorados, #robotica-educativa, #dispositivos-fisicos, #makecode, #microsoft-makecode, #makecode-python, #editor-makecode, #simulador-microbit, #plataforma-web, #makecode-arcade, #programacion-bloques, #pensamiento-computacional, #algoritmos, #descomposicion, #patrones-logicos, #logica-programacion, #bloques-encajables, #introduccion-coding, #python, #micropython, #codigo-escrito, #lineas-codigo, #sintaxis-python, #basic-show-string, #basic-show-icon, #indentacion, #sangria-codigo, #sensible-mayusculas, #hola-mundo, #variables, #funciones, #def-python, #parametros, #eventos, #input-microbit, #sensores-eventos, #curso-informatica, #tutorial-principiantes, #historia-computacion, #grace-hopper-bug, #debugging-errores, #quiz-final">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mqd2fsz7-rmsn1qvbh" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Introducción a MicroBit con MicroPython</a>
+<ul class="other-section">
+<li> <a href="../html/-historia.html" class="no-ch">📜 Historia</a>
+</li>
+<li> <a href="../html/-que-vamos-a-aprender-en-el-curso.html" class="no-ch">🧠 ¿Que vamos a aprender en el curso?</a>
+</li>
+<li> <a href="../html/-que-necesitamos-saber-y-que-herramientas-precisam.html" class="no-ch">📚 ¿Que necesitamos saber y que herramientas precisamos?</a>
+</li>
+<li> <a href="../html/-conociendo-la-placa-microbit.html" class="daddy">🤖 Conociendo la placa Microbit</a>
+<ul class="other-section">
+<li> <a href="../html/-juego-i-sopa-de-letras-con-nuestra-placa.html" class="no-ch">🎮 Juego I: Sopa de Letras con nuestra Placa!</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-usando-la-plataforma-makecode.html" class="no-ch">🌐 Usando la plataforma MakeCode</a>
+</li>
+<li> <a href="../html/-tu-primer-hola-mundo-en-makecode-con-bloques.html" class="daddy">🚀 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Bloques)</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-mi-primer-programa.html" class="no-ch">📋 Quiz &quot;Mi primer programa&quot;</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-tu-primer-hola-mundo-en-makecode-con-python.html" class="daddy">🐍 Tu primer &quot;Hola Mundo&quot; en MakeCode (Con Python)</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-mi-primer-programa-con-python-.html" class="no-ch">📋 Quiz &quot;Mi primer programa&quot; ( con Python )</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-que-son-las-variables-y-como-usarlas-en-python.html" class="daddy">📦 ¿Qué son las variables y cómo usarlas en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-sobre-varibales.html" class="no-ch">📋 Quiz sobre varibales</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-que-son-las-funciones-y-como-usarlas-en-python.html" class="daddy">🛠️ ¿Qué son las funciones y cómo usarlas en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-quiz-sobre-funciones.html" class="no-ch">📋 Quiz sobre funciones</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/-que-son-los-eventos-y-como-usarlos-en-python.html" class="daddy">⚡ ¿Qué son los eventos y cómo usarlos en Python?</a>
+<ul class="other-section">
+<li> <a href="../html/-video-1-movimiento-de-led-con-micropython.html" class="no-ch">🎬 VIDEO 1: Movimiento de led con Micropython</a>
+</li>
+<li class="active"> <a href="../html/-video-2-eventos-de-radio.html" class="active no-ch">🎬 VIDEO 2: Eventos de Radio</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/-el-desafio-final-quiz-de-30-preguntas.html" class="no-ch">🏆 El desafio final!! Quiz de 30 preguntas</a>
+</li>
+</ul>
+</nav><main id="page-mqd2fsz7-rmsn1qvbh" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MicroBit con Python</p>
+<p class="package-subtitle">Una introducción básica a la programación en las placas micro:bit con Micro Python</p></div>
+<div class="page-header"><h1 class="page-title">🎬 VIDEO 2: Eventos de Radio</h1></div>
+</header><div id="page-content-page-mqd2fsz7-rmsn1qvbh" class="page-content">
+<article id="block-1780871124724-256gczxp0" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">🎬 Comunicación Inalámbrica entre Placas Micro:bit</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1780871124723-9dhtq9t9y" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1780871124723-9dhtq9t9y&quot;}">
+<div class="exe-text-template">
+    <p>El propósito de esta actividad es diseñar y comprender un sistema de comunicación inalámbrica básico utilizando dos placas micro:bit que interactúan entre sí en tiempo real. A través de este ejercicio, aprenderemos cómo configurar redes mediante canales de radio, cómo empaquetar y transmitir datos en forma de texto, y de qué manera una placa receptora puede tomar decisiones lógicas condicionales al interpretar los mensajes que viajan por el aire.</p>
+<p>A continuación, se presentan los ejemplos de código correspondientes al Transmisor y al Receptor necesarios para poner en marcha el proyecto.</p>
+<p><strong>Ejemplo de codigo "Transmisor":<br /></strong></p>
+<p><code>radio.set_group(1)</code></p>
+<p><code>def enviarFeliz():</code><br /><code>    radio.send_string("Feliz")</code></p>
+<p><code>def enviarTriste():</code><br /><code>    radio.send_string("Triste")</code></p>
+<p><code>input.on_button_pressed(Button.A, enviarFeliz)</code><br /><code>input.on_button_pressed(Button.B, enviarTriste)</code><br /></p>
+<p><strong><br />Ejemplo de codigo "Receptor":<br /></strong></p>
+<p><code>radio.set_group(1)</code></p>
+<p><code>def recibirMensaje(mensaje):</code><br /><code>    if mensaje == "Feliz":</code><br /><code>        basic.show_icon(IconNames.HAPPY)</code><br /><code>    elif mensaje == "Triste":</code><br /><code>        basic.show_icon(IconNames.SAD)</code><br /><code>    else:</code><br /><code>        basic.clear_screen()</code></p>
+<p><code>radio.on_received_string(recibirMensaje)</code><br /></p>
+<p>Para entender cómo funciona este programa, debemos imaginar que estamos creando un sistema de conversación en el aire entre dos o más placas micro:bit independientes. Una de las placas actuará como Transmisor (la que envía los datos) y otra como Receptor (la que escucha y muestra los resultados).</p>
+<p>El código se divide en cuatro conceptos clave que estructuran esta lógica:</p>
+<p><strong>1. El canal de comunicación (radio.set_group)</strong></p>
+<p>En telecomunicaciones, para que dos dispositivos puedan hablar entre sí, primero deben estar sintonizados exactamente en la misma frecuencia. La instrucción radio.set_group(1) hace precisamente eso: define un "canal" o grupo de conversación cerrado.</p>
+<p><strong>Por qué funciona:</strong> Al configurar ambas placas en el grupo 1, nos aseguramos de que el receptor escuche con atención la misma línea por la que transmite el emisor. Si una placa estuviera en el grupo 1 y otra en el grupo 5, las señales viajarían por el aire pero nunca llegarían a entenderse, tal como ocurre cuando intentás escuchar una radio FM en la sintonía equivocada.</p>
+<p><br /><strong>2. Captura de eventos y empaquetado en el Transmisor</strong></p>
+<p>La primera parte del código se encarga de vigilar qué hace el usuario con los botones físicos de la micro:bit. No se ejecuta de arriba a abajo una sola vez, sino que utiliza manejadores de eventos mediante la instrucción input.on_button_pressed. La placa se queda esperando en silencio hasta que ocurre una acción externa:</p>
+<p><strong>Al presionar el Botón A: </strong>El procesador interrumpe lo que está haciendo y corre la función enviarFeliz(). Esta función ejecuta radio.send_string("Feliz"), lo que toma la palabra "Feliz", la transforma en una onda de radio imperceptible y la lanza al aire a una velocidad increíble.</p>
+<p><br /><strong>Al presionar el Botón B: </strong>Ocurre exactamente lo mismo, pero la función enviarTriste() empaqueta y transmite la palabra "Triste".</p>
+<p><strong>3. Escucha activa en el Receptor</strong></p>
+<p>En la segunda mitad del código, la placa receptora utiliza la línea radio.on_received_string(recibirMensaje). Esto configura un evento de red que trabaja en segundo plano. Como la placa no sabe en qué momento exacto vas a presionar un botón en la otra micro:bit, delega en su antena la tarea de vigilar el espacio.</p>
+<p>En el instante preciso en que la antena capta una señal de texto en el grupo 1, el hardware la intercepta, frena cualquier otra tarea de la micro:bit y activa de inmediato la función recibirMensaje(mensaje). El texto que viajó por el aire (ya sea "Feliz" o "Triste") se guarda automáticamente adentro de la variable llamada mensaje para que podamos trabajar con él.</p>
+<p><strong>4. Toma de decisiones algorítmica (if / elif / else)</strong></p>
+<p>Una vez que el mensaje llegó sano y salvo a la función del receptor, la computadora necesita evaluar qué hacer con esa información. Para ello, utiliza una estructura condicional que analiza el texto de manera estricta:</p>
+<p><strong>Primera evaluación (if mensaje == "Feliz":): </strong>El programa compara el texto recibido. Si coincide letra por letra con la palabra "Feliz", se ejecuta la orden de hardware basic.show_icon(IconNames.HAPPY), encendiendo los LEDs de la pantalla para dibujar una carita alegre.</p>
+<p><br /><strong>Segunda evaluación (elif mensaje == "Triste":): </strong>Si la primera comparación dio falso, el programa pasa a comprobar si el mensaje es "Triste". Si esta condición se cumple, cambia los LEDs para mostrar el ícono de una carita triste (IconNames.SAD).</p>
+<p><strong>Plan de emergencia (else:): </strong>Si por alguna razón la antena interceptara un mensaje extraño, corrupto o incompleto que no sea ninguno de los dos anteriores, la estructura salta directamente al bloque else y ejecuta <em>basic.clear_screen()</em>. Esto limpia la pantalla por completo y funciona como una red de seguridad para evitar que la placa muestre cualquier dibujo errático o se quede congelada con información vieja.</p>
+<p><strong>Video Tutorial:</strong></p>
+<p><iframe width="560" height="314" src="https://www.youtube.com/embed/RIKloAP80mw" allowfullscreen="allowfullscreen"></iframe></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/-video-1-movimiento-de-led-con-micropython.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/-el-desafio-final-quiz-de-30-preguntas.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Reconocimiento - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>
